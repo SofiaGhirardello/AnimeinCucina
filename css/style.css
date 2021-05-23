@@ -100,6 +100,8 @@ nav a:hover {
 body {
   background-attachment: fixed;
   background-image: url(sfondo2.png); 
+  position: relative;
+  min-height: 100vh
 }
 
 body section{
@@ -418,10 +420,10 @@ h2#lastnews {
 
 /*footer*/
 footer {
-  margin-bottom:0 !important;
   margin-top: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   width: 100%;
   background-color: #EDE9D0;
   color: white;
@@ -475,14 +477,14 @@ body section{
 }
 
 footer {
-  margin-bottom:0 !important;
   margin-top: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   width: 100%;
   background-color: #EDE9D0;
   color: white;
-  text-align: center; 
+  text-align: center;
 }
 
 header section{
