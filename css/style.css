@@ -258,6 +258,8 @@ h2#lastnews {
 }
 
 #ricette {
+  display: flex;
+  flex-direction: row;
   padding-top: 2em;
   border-top: 2px solid black;
   margin-left: 0.5em;
@@ -444,6 +446,10 @@ footer {
 
 @media only screen and (max-device-width: 480px) {
 
+h2,p, header, ol, .testodx {
+  font-size: 2em;
+}
+
 #logo {
   margin-left: 0;
   margin-right: auto;
@@ -451,10 +457,11 @@ footer {
   padding: 1em;
   text-align: left;
   right: 0;
+  width: 35%;
+  height: 40%;
 }
 
-
-  body{
+body{
   margin-left:0;
   margin-right: 0;
   background-image: url(sfondo.jpg);
@@ -469,14 +476,13 @@ body section{
 
 footer {
   margin-bottom:0 !important;
-  margin-top: 0;
+  margin-top: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
   width: 100%;
   background-color: #EDE9D0;
   color: white;
-  text-align: center;
-  position: absolute;
+  text-align: center; 
 }
 
 header section{
@@ -485,10 +491,17 @@ header section{
 }
 
 nav {
-  margin-top: 2em;
   padding-top: 1em;
-  padding-bottom: 1em;  
+  padding-bottom: 1em; 
+  margin-left: 0; 
 }
+
+#nav2 {
+  position: relative;
+  float: right;
+  font-size: 0.7em;
+}
+
 
 .row {
   text-align: center;
@@ -496,7 +509,7 @@ nav {
    position: absolute;
    display: center;
    margin-right: auto;
-   margin-left: 30% !important;
+   width: 100%;
 }
 
 .polaroid {
@@ -507,13 +520,12 @@ nav {
 
 .polaroid a {
   background: #EDE9D0;
-  width: 90%;
-  height: 14em;
-  display: center;
+  width: 100%;
+  height: 12em;
   border: 1px solid black;
   margin: 1em;
   padding: 0.5em;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -524,10 +536,41 @@ nav {
   z-index: 0;
   position: relative;
 }
+
+.polaroid a::after {
+  position: absolute;
+  top: 3em;
+  left: 20em;
+}
+
 .polaroid img {
   border: 1px ;
   display: center;
   width: 15em;
   height: 11em;
+}
+
+.titoloanime b{
+  position: absolute;
+  top: 6em;
+  left: 55%;
+  font-size: 2em;
+}
+
+ul.testodx {
+  font-size: 1em;
+}
+
+section#ingredienti{
+  font-size: 2em;
+  padding-left: 1em;
+}
+
+.testodx p {
+  margin-left: 1em !important;
+  font-size: 1em;
+  display: table-row;
+  position: relative;
+  text-align: center;
 }
 }
