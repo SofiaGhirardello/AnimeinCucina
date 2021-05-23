@@ -441,3 +441,93 @@ footer {
 #footer:hover {
   transform: scale(1.2);
 }
+
+@media only screen and (max-device-width: 480px) {
+
+#logo {
+  margin-left: 0;
+  margin-right: auto;
+  position: left;
+  padding: 1em;
+  text-align: left;
+  right: 0;
+}
+
+
+  body{
+  margin-left:0;
+  margin-right: 0;
+  background-image: url(sfondo.jpg);
+}
+
+body section{
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(sfondo.jpg);
+  box-shadow: none;
+}
+
+footer {
+  margin-bottom:0 !important;
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  background-color: #EDE9D0;
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+
+header section{
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;  
+}
+
+.row {
+  text-align: center;
+   display: table-column-group !important;
+   position: absolute;
+   display: center;
+   margin-right: auto;
+   margin-left: 30% !important;
+}
+
+.polaroid {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding: bottom;
+}
+
+.polaroid a {
+  background: #EDE9D0;
+  width: 90%;
+  height: 14em;
+  display: center;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+}
+.polaroid img {
+  border: 1px ;
+  display: center;
+  width: 15em;
+  height: 11em;
+}
+}
