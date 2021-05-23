@@ -1,10 +1,12 @@
 /*font*/
 h1, h2, header, .polaroid{
 	font-family: 'Delius', cursive;
+  letter-spacing: 0.05em;
 }
 
  footer, p, ol, .testodx {
 	font-family: 'Roboto Slab', serif;
+  letter-spacing: 0.05em;
 }
 
 #logo {
@@ -252,6 +254,7 @@ h2#lastnews {
 .ricette {
   text-align: center;
   line-height: 1.5em;
+  padding-bottom: 2em;
 }
 
 /*ricette*/
@@ -259,7 +262,7 @@ h2#lastnews {
   padding-left: 2em;
 }
 
-#ricette {
+#ricetta {
   display: flex;
   flex-direction: row;
   padding-top: 2em;
@@ -268,7 +271,7 @@ h2#lastnews {
   margin-right: 0.5em;
 }
 
-#ricette img {
+#ricetta img {
   margin-top: 1em;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
@@ -449,7 +452,7 @@ footer {
 @media only screen and (max-device-width: 480px) {
 
 h2,p, header, ol, .testodx {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 #logo {
