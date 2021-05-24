@@ -254,7 +254,6 @@ h2#lastnews {
 .ricette {
   text-align: center;
   line-height: 1.5em;
-  padding-bottom: 2em;
 }
 
 /*ricette*/
@@ -316,12 +315,13 @@ h2#lastnews {
 .row {
    display: inline-block;
    position: relative;
+   margin-bottom: 2em;
 }
 
 .polaroid {
   padding-left: 3em;
   padding-right: 3em;
-  padding: bottom;
+  margin-bottom: 1em;
 }
 
 .polaroid a {
@@ -395,7 +395,6 @@ h2#lastnews {
     width: auto;
     text-align: left;
     padding-left: 1em;
-    padding-bottom: 3em;
     height: auto;
 }
 
@@ -411,7 +410,7 @@ h2#lastnews {
    clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
 }
 
-/*contacts*/
+/*contatti*/
 #social {
  text-align: center;
  overflow: hidden;
@@ -421,23 +420,64 @@ h2#lastnews {
   padding-bottom: 2em;
 }
 
+.polaroid {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding: bottom;
+}
+
+.contatti a {
+  background: #EDE9D0;
+  width: 10em;
+  height: auto;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+}
+.contatti a:after {
+  color: #56423D;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 1px;
+}
+.contatti a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
 /*footer*/
+
+
 footer {
   margin-top: 2em;
   position: absolute;
   bottom: 0;
-  width: 100%;
   width: 100%;
   background-color: #EDE9D0;
   color: white;
   text-align: center;
 }
 
-footer {
+#contenuti {
   position: relative;
-  bottom: 0;
-  width: 100%;
-  color: #880000;
+  min-height: 100vh;
 }
 
 #footer {
@@ -451,18 +491,19 @@ footer {
 
 @media only screen and (max-device-width: 480px) {
 
-h2,p, header, ol, .testodx {
-  font-size: 1em;
+h2, p, ol {
+  font-size: 3em;
 }
 
 #logo {
   margin-left: 0;
   margin-right: auto;
   position: left;
-  padding: 1em;
+  padding-left: 1em;
+  margin-bottom: 1em;
   text-align: left;
   right: 0;
-  width: 35%;
+  width: 45%;
   height: 40%;
 }
 
@@ -479,17 +520,6 @@ body section{
   box-shadow: none;
 }
 
-footer {
-  margin-top: 2em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  width: 100%;
-  background-color: #EDE9D0;
-  color: white;
-  text-align: center;
-}
-
 header section{
   display: flex;
   flex-direction: row;
@@ -499,38 +529,36 @@ nav {
   padding-top: 1em;
   padding-bottom: 1em; 
   margin-left: 0; 
+  font-size: 1.5em;
 }
 
 #nav2 {
   position: relative;
   float: right;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 
-
 .row {
-  text-align: center;
-   display: table-column-group !important;
-   position: absolute;
-   display: center;
+   position: relative;
    margin-right: auto;
    width: 100%;
 }
 
-.polaroid {
+.polaroid { 
+  position: relative;
   padding-left: 3em;
   padding-right: 3em;
-  padding: bottom;
 }
 
 .polaroid a {
   background: #EDE9D0;
-  width: 100%;
+  width: 50em;
   height: 12em;
+  display: inline-block;
   border: 1px solid black;
-  margin: 1em;
+  margin-bottom: 2em;
   padding: 0.5em;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -543,9 +571,8 @@ nav {
 }
 
 .polaroid a::after {
-  position: absolute;
   top: 3em;
-  left: 20em;
+  position: absolute;
 }
 
 .polaroid img {
@@ -555,27 +582,40 @@ nav {
   height: 11em;
 }
 
-.titoloanime b{
-  position: absolute;
-  top: 6em;
-  left: 55%;
+.titoloanime b, .aboutsx b, .aboutdx b{
+  font-size: 2.5em;
+}
+
+h2.ricette b {
   font-size: 2em;
 }
 
 ul.testodx {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 section#ingredienti{
-  font-size: 2em;
   padding-left: 1em;
+  font-size: em;
 }
 
-.testodx p {
+p.testodx {
   margin-left: 1em !important;
-  font-size: 1em;
   display: table-row;
   position: relative;
   text-align: center;
 }
+
+.contatti a {
+  width: 90%;
+}
+
+footer {
+  margin-top: 4em;
+}
+
+#footer {
+  width: 5em;
+}
+
 }
