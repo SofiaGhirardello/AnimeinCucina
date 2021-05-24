@@ -4,7 +4,7 @@ h1, h2, header, .polaroid{
   letter-spacing: 0.05em;
 }
 
- footer, p, ol, .testodx {
+ footer, p, ol, .testodx, ul#ingredienti {
 	font-family: 'Roboto Slab', serif;
   letter-spacing: 0.05em;
 }
@@ -276,9 +276,10 @@ h2#lastnews {
   border-bottom: 5px solid black;
 }
 
-#ingredienti ul {
-  margin-bottom: 0 !important;
-  padding-bottom: 2em;
+ul#ingredienti{
+ margin-bottom: 0em !important;
+ padding-bottom: 2em;
+ margin-left: 2em;
   line-height: 2em;
 }
 
@@ -591,15 +592,28 @@ h2.ricette b {
 }
 
 ul.testodx {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
-section#ingredienti{
-  padding-left: 1em;
-  font-size: em;
+ul#ingredienti{
+  margin-left: 0;
+  font-size: 3em;
 }
 
-p.testodx {
+h2#ingredienti {
+  padding-left: 0.5em;
+  font-size: 3em;
+}
+
+ol {
+  margin-left: 0.5em;
+}
+
+h2#nomericetta {
+  font-size: 3em;
+}
+
+p.testodx, p#testo {
   margin-left: 1em !important;
   display: table-row;
   position: relative;
