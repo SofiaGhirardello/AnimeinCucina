@@ -417,20 +417,22 @@ ul#ingredienti{
  overflow: hidden;
 }
 
-#contatti {
-  padding-bottom: 2em;
+.polaroid {
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 1em;
 }
 
-.polaroid {
-  padding-left: 3em;
-  padding-right: 3em;
-  padding: bottom;
+.contatti {
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: center;
 }
 
 .contatti a {
-  background: #EDE9D0;
-  width: 10em;
-  height: auto;
+ background: #EDE9D0;
+  width: 85%;
+  height: 14em;
   display: inline-block;
   border: 1px solid black;
   margin: 1em;
@@ -463,12 +465,17 @@ ul#ingredienti{
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 
-/*footer*/
+.polaroid .contatti img {
+  border: 1px solid black;
+  display: block;
+  width: 10em;
+  height: 10em;
+}
 
+/*footer*/
 
 footer {
   margin-top: 2em;
-  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #EDE9D0;
@@ -620,10 +627,6 @@ p.testodx, p#testo {
   text-align: center;
 }
 
-.contatti a {
-  width: 90%;
-}
-
 footer {
   margin-top: 4em;
 }
@@ -631,5 +634,4 @@ footer {
 #footer {
   width: 5em;
 }
-
 }
