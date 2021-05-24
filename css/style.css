@@ -1,12 +1,31 @@
-/*font*/
-h1, h2, header, .polaroid{
+/*font e colori*/
+h1, h2, header{
 	font-family: 'Delius', cursive;
   letter-spacing: 0.05em;
 }
 
- footer, p, ol, .testodx, ul#ingredienti {
+ footer, p, ol, .testodx, ul#ingredienti, .polaroid{
 	font-family: 'Roboto Slab', serif;
   letter-spacing: 0.05em;
+}
+
+
+
+h1 {
+  color: #B7000A;
+}
+
+h2 {
+  color: #794E4D;
+}
+
+
+p {
+  line-height: 1.7em;
+}
+/*header*/
+header {
+  padding-top: 2em;
 }
 
 #logo {
@@ -15,18 +34,6 @@ h1, h2, header, .polaroid{
   margin-right: auto;
   text-align: center;
   display: block;
-}
-
-h2 {
-  color: #720000;
-}
-
-header {
-  padding-top: 2em;
-}
-
-p {
-  line-height: 1.7em;
 }
 
 /*navbar*/
@@ -113,7 +120,7 @@ body section{
   box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 
-/*centro home*/
+/*home*/
 .imgcentro {
   overflow:hidden;
   width: auto;
@@ -151,33 +158,73 @@ img.centrodx{
   height: auto;
 }
 
-/*testo home*/
 .abstract {
   text-align: center;
   padding: 3em;
 }
 
-
-/*last news*/
-#polaroid {
-  padding-bottom: 2em;
-}
-
 h2#lastnews {
+  text-decoration: underline;
   text-align: center;
   padding: 1em;
 }
 
-.text a{
-  color: white;
-  font-size: 3em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+/*polaroid*/ 
+.row {
+   display: inline-block;
+   position: relative;
+   margin-bottom: 2em;
+}
+
+.polaroid {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+}
+
+.polaroid a {
+  background: #FFF4EE;
+  width: 90%;
+  height: 14em;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0.5em;
   text-align: center;
+  text-decoration: none !important;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+}
+.polaroid a:after {
+  color: black;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 1px;
+}
+
+.polaroid img {
+  border: 1px solid black;
+  display: block;
+  width: 15em;
+  height: 11em;
+}
+
+.polaroid a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 
 /*body anime*/
@@ -226,6 +273,13 @@ h2#lastnews {
    clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
 }
 
+.ricette {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+/*ricetta*/
+/*titoloricette*/
 .mochi {
    float: left;
    width: 90%;
@@ -250,24 +304,21 @@ h2#lastnews {
    clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
 }
 
-/*ricetta*/
-.ricette {
-  text-align: center;
-  line-height: 1.5em;
-}
-
-/*ricette*/
 #ingredienti {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 #ricetta {
   display: flex;
   flex-direction: row;
   padding-top: 2em;
-  border-top: 2px solid black;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  border-bottom: 5px solid black;
+}
+
+#preparazione {
+  padding-left: 1em;
+  text-decoration: underline;
+
 }
 
 #ricetta img {
@@ -277,9 +328,9 @@ h2#lastnews {
 }
 
 ul#ingredienti{
- margin-bottom: 0em !important;
- padding-bottom: 2em;
- margin-left: 2em;
+  margin-bottom: 0em !important;
+  padding-bottom: 2em;
+  margin-left: 2em;
   line-height: 2em;
 }
 
@@ -294,79 +345,6 @@ ul#ingredienti{
   float: left;
   margin-bottom: 2em;
   margin-top: 1em;
-}
-
-/*testo home*/
-.abstract {
-  text-align: center;
-  padding: 3em;
-}
-
-/*hover*/
-.col-4:hover {
-  transform: scale(1.2);
-}
-
-.col-4:hover .overlay {
-  opacity: 0.5;
-}
-
-/*polaroid*/ 
-
-.row {
-   display: inline-block;
-   position: relative;
-   margin-bottom: 2em;
-}
-
-.polaroid {
-  padding-left: 3em;
-  padding-right: 3em;
-  margin-bottom: 1em;
-}
-
-.polaroid a {
-  background: #EDE9D0;
-  width: 90%;
-  height: 14em;
-  display: inline-block;
-  border: 1px solid black;
-  margin: 1em;
-  padding: 0.5em;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -webkit-transition: all .20s linear;
-  -moz-transition: all .20s linear;
-  transition: all .20s linear;
-  z-index: 0;
-  position: relative;
-}
-.polaroid a:after {
-  color: #56423D;
-  font-size: 25px;
-  content: attr(title);
-  position: relative;
-  top: 1px;
-}
-
-.polaroid img {
-  border: 1px solid black;
-  display: block;
-  width: 15em;
-  height: 11em;
-}
-
-.polaroid a:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
-  z-index: 10;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 
 /*about*/
@@ -417,12 +395,6 @@ ul#ingredienti{
  overflow: hidden;
 }
 
-.polaroid {
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-bottom: 1em;
-}
-
 .contatti {
   margin-left: 5em;
   margin-right: 5em;
@@ -448,6 +420,7 @@ ul#ingredienti{
   z-index: 0;
   position: relative;
 }
+
 .contatti a:after {
   color: #56423D;
   font-size: 25px;
@@ -455,6 +428,7 @@ ul#ingredienti{
   position: relative;
   top: 1px;
 }
+
 .contatti a:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -473,7 +447,6 @@ ul#ingredienti{
 }
 
 /*footer*/
-
 footer {
   margin-top: 2em;
   bottom: 0;
@@ -481,11 +454,6 @@ footer {
   background-color: #EDE9D0;
   color: white;
   text-align: center;
-}
-
-#contenuti {
-  position: relative;
-  min-height: 100vh;
 }
 
 #footer {
@@ -497,9 +465,18 @@ footer {
   transform: scale(1.2);
 }
 
+/*documentazione*/
+.documentazione {
+  text-align: center;
+}
+
+#abstract, #pmp, #layout, #cs {
+  padding: 2em;
+}
+
 @media only screen and (max-device-width: 480px) {
 
-h2, p, ol {
+h1, p, ol {
   font-size: 3em;
 }
 
@@ -591,7 +568,7 @@ nav {
 }
 
 .titoloanime b, .aboutsx b, .aboutdx b{
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h2.ricette b {
@@ -607,7 +584,7 @@ ul#ingredienti{
   font-size: 3em;
 }
 
-h2#ingredienti {
+h2#ingredienti, h2#preparazione {
   padding-left: 0.5em;
   font-size: 3em;
 }
