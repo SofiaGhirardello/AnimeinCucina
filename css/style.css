@@ -28,7 +28,7 @@ header {
   padding-top: 2em;
 }
 
-#logo {
+a#logo {
   padding: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -375,6 +375,7 @@ ul#ingredienti{
     text-align: left;
     padding-left: 1em;
     height: auto;
+    padding-bottom: 2em;
 }
 
 .persona {
@@ -466,12 +467,38 @@ footer {
 }
 
 /*documentazione*/
+
 .documentazione {
   text-align: center;
+  padding: 2em;
 }
 
-#abstract, #pmp, #layout, #cs {
-  padding: 2em;
+.documentazione p {
+  padding-bottom: 1em;
+}
+
+.documentazione ol li{
+  text-align: left;
+}
+
+figure {
+ padding-bottom: 2em;
+}
+
+figcaption {
+  padding-top: 0.5em;
+  text-decoration: underline;
+}
+
+#imgdoc {
+  width: 50%;
+  text-align: center;
+  display: center;
+}
+
+#social {
+  width: 30%;
+  padding-left: 2em;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -480,7 +507,7 @@ h1, p, ol {
   font-size: 3em;
 }
 
-#logo {
+a#logo{
   margin-left: 0;
   margin-right: auto;
   position: left;
@@ -490,6 +517,10 @@ h1, p, ol {
   right: 0;
   width: 45%;
   height: 40%;
+}
+
+a#logo img {
+  width: 95%;
 }
 
 body{
