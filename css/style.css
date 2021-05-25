@@ -485,6 +485,12 @@ footer {
   text-align: left;
 }
 
+.documentazione ol li a{
+  text-align: left;
+  color: #B7000A;
+}
+
+
 figure {
  padding-bottom: 2em;
 }
